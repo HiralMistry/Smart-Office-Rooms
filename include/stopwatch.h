@@ -6,6 +6,10 @@
 #include "on.h"
 #include "off.h"
 #include "user_interface.h"
+#include "idleState.h"
+#include "occupiedAllOnState.h"
+#include "occupiedOffState.h"
+#include "notOccupiedAllOffState.h"
 
 namespace stopwatch {
 

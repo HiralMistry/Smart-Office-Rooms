@@ -20,6 +20,8 @@ int main() {
      .init()
      .run();
 
-    endwin();     
+    endwin(); 
+    
+        
      
 }
