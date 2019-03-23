@@ -11,18 +11,7 @@ namespace {
     using namespace elma;
     using namespace stopwatch;
 
-    // TEST(StopWatch,Construction) { 
-    //     //hdvdhfdhfdhf
-    //     StopWatch sw; 
-    //     ASSERT_EQ("off", sw.current().name());
-    // }
-
-    // More tests go here. You should aim to test every
-    // method of every object, either directly or indirectly,
-    // although testing user interfaces is notoriously 
-    // difficult.
-
-    TEST(Check, States) {
+    TEST(Status, States) {
         IdleState id("idle");
         Occupied_All_ON on("Ocu_on");
         Occupied_OFF off("Ocu_off");
@@ -55,5 +44,41 @@ namespace {
         
     }
 
+    TEST(Check, StateMachineAdditional) {
 
+        Manager m;
+        SmartRoom sm = SmartRoom();
+
+        m.schedule(sm,100_ms)
+        .init()
+        .run(500_ms);
+        m.emit(Event("start"));
+        m.emit(Event("No Motion Detected"));
+        m.emit(Event("Motion Detected & light not required"));
+
+        //! Goes back to Not Occupied as ther is no motion in the room
+        m.emit(Event("No Motion Detected"));
+        EXPECT_EQ(sm.current().name(),"Not Occupied");
+
+        //! Goes to All On state as motion is detected and light is required
+        m.emit(Event("Motion Detected & light required"));
+        EXPECT_EQ(sm.current().name(),"All_On");
+
+        //! Remains in the same state
+        m.emit(Event("temperature change"));
+        EXPECT_EQ(sm.current().name(),"All_On");
+
+        //! Goes to Off state as motion is detected but now light is no longer required
+        m.emit(Event("Motion Detected & light not required"));
+        EXPECT_EQ(sm.current().name(),"Off");
+
+        //! Goes to Not Occupied state as motion is not detected
+        m.emit(Event("No Motion Detected"));
+        EXPECT_EQ(sm.current().name(),"Not Occupied");
+
+        //! Remains in the same state
+        m.emit(Event("temperature change"));
+        EXPECT_EQ(sm.current().name(),"Not Occupied");
+
+    }
 }

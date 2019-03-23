@@ -8,11 +8,5 @@ using namespace elma;
 using namespace stopwatch;
 
 void IdleState::exit(const Event& e) {
-    // if ( e.name() == "start/stop" ) {
-    //     // User started the stopwatch
-    //     stopwatch().begin();
-    // } else if ( e.name() == "reset" ) {
-    //     // User rest the stopwatch
-    //     stopwatch().reset();
-    // }
+    // Nothing to do here.
 }
