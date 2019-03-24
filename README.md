@@ -1,31 +1,17 @@
-Example Elma Project
+Smart Office Rooms 
 ===
 
-[Elma](http://klavinslab.org/elma) is an event loop manager designed to teach embedded and reactive systems programming. This repository contains an example Elma project, showing how to use many Elma features, as well as illustrating how to arrange the files and directories in an Elma project.
-
-The source code for this project is available [on github](https://github.com/klavinslab/elma_project).
+[Smart Office Rooms](https://github.com/HiralMistry/Smart-Office-Rooms) is an event loop manager designed to make the rooms of oofices smart which do not require active controlling. The rooms automatically turn ON/OFF the appliances such as lights, AC, Heater etc. It makes the offices Smart which saves energy and prevents the wastage of electricity by automatically switching off all the appliances if the room is not occupied. 
+The source code for this project is forked from [on github](https://github.com/klavinslab/elma_project).
 
 Installation
 ---
 
-    git clone https://github.com/klavinslab/elma_project.git
-    cd elma_project
+    git clone https://github.com/HiralMistry/Smart-Office-Rooms
     docker run -v $PWD:/source -it klavins/elma:latest bash
     make
     make docs
 
-
-Execution
----
-To run the stopwatch, type
-
-    bin/stopwatch
-
-The stopwatch is controlled via the keyboard, via these keys:
-- **s**: Start or stop
-- **l**: Lap
-- **r**: Reset
-- **q**: Quit
 
 Testing
 ---
