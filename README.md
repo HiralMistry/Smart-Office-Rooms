@@ -6,7 +6,7 @@ The source code for this project is forked from [on github](https://github.com/k
 
 StateMachine Diagram
 ===
-Click [here](https://photos.google.com/photo/AF1QipNeWGmeIZySaWHUNNk07w9EnOvhpGH_OLXnevWC) to see the statemachine diagram.
+Click [here](https://photos.app.goo.gl/CYFqcsyUnEZc4Pyc6) to see the statemachine diagram.
 
 Installation
 ---
