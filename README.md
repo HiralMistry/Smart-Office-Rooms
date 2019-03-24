@@ -4,6 +4,10 @@ Smart Office Rooms
 [Smart Office Rooms](https://github.com/HiralMistry/Smart-Office-Rooms) is an event loop manager designed to make the rooms of oofices smart which do not require active controlling. The rooms automatically turn ON/OFF the appliances such as lights, AC, Heater etc. It makes the offices Smart by turning ON the appliance as it detects anybody present in the room. It saves energy and prevents the wastage of electricity by automatically switching off all the appliances if the room is not occupied. 
 The source code for this project is forked from [on github](https://github.com/klavinslab/elma_project).
 
+StateMachine Diagram
+===
+Click [here](https://photos.google.com/photo/AF1QipNeWGmeIZySaWHUNNk07w9EnOvhpGH_OLXnevWC) to see the statemachine diagram.
+
 Installation
 ---
 
