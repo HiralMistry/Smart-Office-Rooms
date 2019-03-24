@@ -68,5 +68,5 @@ The Events are like these:
 
 Acknowledgements / Reference
 ---
-The source code for this project is forked from [on github](https://github.com/klavinslab/elma_project).
+The source code for this project is forked from [this repo](https://github.com/klavinslab/elma_project).
 
