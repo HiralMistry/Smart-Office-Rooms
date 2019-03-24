@@ -12,7 +12,7 @@ namespace stopwatch {
             
             virtual void entry(const Event& e) {}
             virtual void during() {} 
-            virtual void exit(const Event& e);
+            virtual void exit(const Event& e) {}
     };
 }
 #endif
