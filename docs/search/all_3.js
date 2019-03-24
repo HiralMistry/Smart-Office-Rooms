@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['offstate',['OffState',['../classstopwatch_1_1OffState.html',1,'stopwatch']]],
-  ['offstate',['OffState',['../classstopwatch_1_1OffState.html#a421aa693834d809dfb2e39ec3bd3cc2e',1,'stopwatch::OffState']]],
-  ['onstate',['OnState',['../classstopwatch_1_1OnState.html#a247e867c94f178ca06be04de762dbe52',1,'stopwatch::OnState']]],
-  ['onstate',['OnState',['../classstopwatch_1_1OnState.html',1,'stopwatch']]]
+  ['lap',['lap',['../classstopwatch_1_1StopWatch.html#a8e25f50201831578ad0b588a4ce16504',1,'stopwatch::StopWatch']]],
+  ['laps',['laps',['../classstopwatch_1_1StopWatch.html#a8b335f9667cd518297ca3be4e57c4972',1,'stopwatch::StopWatch']]]
 ];
